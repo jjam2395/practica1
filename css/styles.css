@@ -9,13 +9,14 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
-header{
+.header-personal{
 	display: flex;
 	background-color: #C8C8C8;
 	background-image: url(../images/hojas.jpg);
 	flex-direction: column;
-	height: 60vh;
+	height: 80vh;
 	color: #fff;
+	position: relative;
 }
 
 	.superior{
@@ -28,9 +29,10 @@ header{
 	}
 
 
-h2{
+h4{
 	display: inline-flex;
 	margin-left: 3%;
+
 }
 
 .sociales{
@@ -84,20 +86,40 @@ h2{
 .carrera{
 	display: flex;
 	justify-content: center;
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.5);
  	width: 100%;
   	line-height: 2;
-  	margin-top: 0;
-  	margin-bottom: 0;
+
+  	margin: 0;
 }
 
 
+.contenido{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
-.encabezado{
+.iframe{
+	display: flex;
+	justify-content: center;
+	margin: 3em 0 2em 0;
+}
+
+.header-acercade{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 	background-color: #1D4CFF;
 	color: #fff;
-	padding: .5em;
-	margin-top: 0;
+	padding: 1em;
+}
+
+
+.encabezado{
+	padding: 0;
+	margin: 0;
 }
 
 p{
@@ -110,6 +132,7 @@ p{
 	background-image: url(../images/bee-gees-2016.png);
 	height: 70vh;
 	position: relative;
+	color:#fff;
 }
 
 .cancion{
@@ -118,7 +141,7 @@ p{
 	background: rgba(0,0,0,.4);
   	width: 100%;
   	line-height: 1;
-  	padding: 1em 0 1em 0;
+  	padding: .2em 0 .2em 0;
 }
 
 .inferior{
@@ -132,6 +155,7 @@ p{
 .letra-cancion{
 	display: flex;
 	justify-content: space-around;
+	flex-direction: row;
 }
 
 .letra-ingles, .letra-español{
@@ -154,10 +178,37 @@ p{
 .descripcion-cancion{
 
 	font-size: 120%;
-	background-color: #111;
+	background-color: #555;
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #fff;
+}
+
+
+@media (max-width: 576px){
+ .logo{
+	display: none;
+}
+
+.item-nombre, .encabezado{
+	font-size: 250%;
+}
+
+.carrera{
+	font-size: 150%;
+
+}
+
+.letra-cancion{
+	flex-direction: column;
+}
+
+.letra-ingles, .letra-español{
+	width: 100%;
+
+}
+
+
 }
 
 
